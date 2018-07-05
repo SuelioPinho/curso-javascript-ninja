@@ -71,6 +71,7 @@ for(var contFor = 100; contFor <= 120; contFor++){
     var contadorFor1 = contFor  % 2 === 0 ?   console.log(contFor) : '';
  }
 
+ 
 console.log( 'Números ímpares entre 111 e 125:' );
 
 for(var contFor = 111; contFor <= 125; contFor++){
