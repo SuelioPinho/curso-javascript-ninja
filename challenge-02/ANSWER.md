@@ -50,13 +50,14 @@ function multiplyAndAdd2(x, y, z) {
 multiplyAndAdd2(3, 4);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+Como o terceiro argumento não foi passado como parâmetro cai na condição do 'if' então o resultado foi 
+"Preencha todos os valores corretamente!"
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
-?
+multiplyAndAdd2(3, 4, 5);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+62
 
 /*
 Crie uma função com as seguintes características:
@@ -67,8 +68,23 @@ Crie uma função com as seguintes características:
 5. Se nenhum argumento for passado, retorne o valor booleano `false`.
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
-?
+function whatever(x, y, z) {
+	if (x ! = null) {
+		if ( y != null ) {
+			if ( z!= null) {
+				return (x + y) / z;
+			} 
+			return x + y;
+		}
+		return x;
+	}
+	return null;
+}
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
-?
+whatever(); // retorno null
+whatever(3); // retorno 3
+whatever(3, 4); // retorno 7
+whatever(3, 4, 5); // retorno 1,4
+
 ```
